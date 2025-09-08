@@ -33,7 +33,7 @@ namespace ScientificCalculator.ViewModels
         [RelayCommand]
         private void Calculate()
         {
-            if (InputText.Lenght == 0)
+            if (InputText.Length == 0)
             {
                 return;
             }
@@ -48,11 +48,11 @@ namespace ScientificCalculator.ViewModels
                 var expression = new NCalc.Expression(inputString);
                 var result = expression.Evaluate();
 
-                CalculatedResult = result.ToString();
+                calculatedResult = result.ToString();
             }
             catch (Exception ex)
             {
-                CalculatedResult = "NaN";
+                calculatedResult = "NaN";
             }
         }
 
@@ -90,7 +90,7 @@ namespace ScientificCalculator.ViewModels
         [RelayCommand]
         private void Backspace()
         {
-            if (InputText.Lenght > 0)
+            if (InputText.Length > 0)
             {
                 InputText = InputText.Substring(0, InputText.Length - 1);
             }

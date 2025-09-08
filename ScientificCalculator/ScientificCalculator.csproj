@@ -67,4 +67,10 @@
 		<PackageReference Include="NCalcSync" Version="5.2.6" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="Views\CalculatorPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
