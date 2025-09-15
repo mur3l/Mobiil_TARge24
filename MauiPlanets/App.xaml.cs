@@ -1,10 +1,33 @@
-﻿namespace MauiPlanets
+﻿using System.Security.Cryptography.X509Certificates;
+
+#if WINDOWS
+using Microsoft.UI;
+using Microsoft.UI.Windowing;
+using Windows.Graphics;
+#endif
+
+namespace MauiPlanets
 {
     public partial class App : Application
     {
+        const int WindowWidth = 1080;
+        const int WindowHeight = 1920;
         public App()
         {
             InitializeComponent();
+#if WINDOWS
+    Microsoft.Maui.Handlers.WindowHandler.Mapper.AppendToMapping("MyCustomization", (handler, view) =>
+        {
+            var mauiWindow = handler.VirtualView;
+            var nativeWindow = handler.PlatformView;
+            nativeWindow.Activate();
+            IntPtr windowHandle = WinRT.Interop.WindowNative.GetWindowHandle(nativeWindow);
+            WindowId windowId = Microsoft.UI.Win32Interop.GetWindowIdFromWindow(windowHandle);
+            AppWindow appWindow = Microsoft.UI.Windowing.AppWindow.GetFromWindowId(windowId);
+            appWindow.Resize(new SizeInt32(WindowWidth, WindowHeight));
+        });
+#endif
+
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
