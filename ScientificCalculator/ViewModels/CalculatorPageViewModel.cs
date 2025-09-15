@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace ScientificCalculator.ViewModels
+
+namespace SciCalc.ViewModels
 {
     [INotifyPropertyChanged]
-
-    internal partial class CalculatorPageViewModel : ObservableObject
-
+    internal partial class CalculatorPageViewModel //: ObservableObject
     {
         [ObservableProperty]
         private string inputText = string.Empty;
@@ -22,10 +16,9 @@ namespace ScientificCalculator.ViewModels
         private bool isSciOpWaiting = false;
 
         [RelayCommand]
-
         private void Reset()
         {
-            calculatedResult = "0";
+            CalculatedResult = "0";
             InputText = string.Empty;
             isSciOpWaiting = false;
         }
@@ -37,22 +30,24 @@ namespace ScientificCalculator.ViewModels
             {
                 return;
             }
+
             if (isSciOpWaiting)
             {
                 InputText += ")";
                 isSciOpWaiting = false;
             }
+
             try
             {
                 var inputString = NormalizeInputString();
                 var expression = new NCalc.Expression(inputString);
                 var result = expression.Evaluate();
 
-                calculatedResult = result.ToString();
+                CalculatedResult = result.ToString();
             }
             catch (Exception ex)
             {
-                calculatedResult = "NaN";
+                CalculatedResult = "NaN";
             }
         }
 
@@ -63,7 +58,7 @@ namespace ScientificCalculator.ViewModels
                 {"×", "*"},
                 {"÷", "/"},
                 {"SIN", "Sin"},
-                {"COS","Cos"},
+                {"COS", "Cos"},
                 {"TAN", "Tan"},
                 {"ASIN", "Asin"},
                 {"ACOS", "Acos"},
@@ -74,7 +69,6 @@ namespace ScientificCalculator.ViewModels
                 {"POW", "Pow"},
                 {"SQRT", "Sqrt"},
                 {"ABS", "Abs"},
-
             };
 
             var retString = InputText;
@@ -127,10 +121,8 @@ namespace ScientificCalculator.ViewModels
         [RelayCommand]
         private void ScientificOperator(string op)
         {
-                InputText += $"{op}(";
-                isSciOpWaiting = false;
+            InputText += $"{op}(";
+            isSciOpWaiting = false;
         }
-
     }
-
 }
