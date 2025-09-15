@@ -10,4 +10,9 @@ public partial class CalculatorPage : ContentPage
 
 		this.BindingContext = new CalculatorPageViewModel();
     }
+
+    public static implicit operator Page(CalculatorPage v)
+    {
+        throw new NotImplementedException();
+    }
 }
