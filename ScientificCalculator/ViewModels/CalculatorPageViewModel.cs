@@ -124,5 +124,6 @@ namespace SciCalc.ViewModels
             InputText += $"{op}(";
             isSciOpWaiting = false;
         }
+
     }
 }
