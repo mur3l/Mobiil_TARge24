@@ -271,10 +271,52 @@
         <Button 
             Grid.Row="6"
             Grid.Column="3"
+            Grid.RowSpan="2"
             Style="{StaticResource OperatorButtonStyle}"
             Text="AC"
             Command="{Binding ResetCommand}"/>
         
+        <!--Row 2-->
+        <Button 
+            Grid.Row="7"
+            Grid.Column="0"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="4"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="4"/>
+
+        <Button 
+            Grid.Row="7"
+            Grid.Column="1"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="5"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="5"/>
+        
+        <Button 
+            Grid.Row="7"
+            Grid.Column="2"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="6"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="6"/>
+        
+        <Button 
+            Grid.Row="7"
+            Grid.Column="3"
+            Style="{StaticResource OperatorButtonStyle}"
+            Text="x"
+            Command="{Binding MathOperatorCommand}"
+            CommandParameter="x"/>
+        
+        <Button 
+            Grid.Row="7"
+            Grid.Column="4"
+            Style="{StaticResource OperatorButtonStyle}"
+            Text="÷"
+            Command="{Binding MathOperatorCommand}"
+            CommandParameter="÷"/>
+
 
     </Grid>
 
