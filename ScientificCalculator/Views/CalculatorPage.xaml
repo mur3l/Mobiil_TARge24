@@ -233,7 +233,7 @@
             Text="("
             Command="{Binding RegionOperatorCommand}"
             CommandParameter="("/>
-        
+
         <Button 
             Grid.Row="5"
             Grid.Column="4"
@@ -242,6 +242,39 @@
             Text=")"
             Command="{Binding RegionOperatorCommand}"
             CommandParameter=")"/>
+        <!--Number and Basic Operators-->
+        <!--Row 1-->
+        <Button 
+            Grid.Row="6"
+            Grid.Column="0"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="7"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="7"/>
+        
+        <Button 
+            Grid.Row="6"
+            Grid.Column="1"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="8"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="8"/>
+        
+        <Button 
+            Grid.Row="6"
+            Grid.Column="2"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="9"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="9"/>
+        
+        <Button 
+            Grid.Row="6"
+            Grid.Column="3"
+            Style="{StaticResource OperatorButtonStyle}"
+            Text="AC"
+            Command="{Binding ResetCommand}"/>
+        
 
     </Grid>
 
