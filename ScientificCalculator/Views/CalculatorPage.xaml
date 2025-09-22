@@ -63,6 +63,186 @@
                 Margin="16,0"/>
         </Grid>
 
+        <!--Scientific Operators-->
+        <!--Row 1-->
+        <Button 
+            Grid.Row="2"
+            Grid.Column="0"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="MEAN"/>
+
+        <Button 
+            Grid.Row="2"
+            Grid.Column="1"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="MOD"/>
+
+        <Button 
+            Grid.Row="2"
+            Grid.Column="2"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="STD"/>
+
+        <Button 
+            Grid.Row="2"
+            Grid.Column="3"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="VAR"/>
+
+        <Button 
+            Grid.Row="2"
+            Grid.Column="4"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="FACT"/>
+
+        <!--Row 2-->
+        <Button 
+            Grid.Row="3"
+            Grid.Column="0"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="SIN"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="SIN"/>
+
+        <Button 
+            Grid.Row="3"
+            Grid.Column="1"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="COS"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="COS"/>
+
+        <Button 
+            Grid.Row="3"
+            Grid.Column="2"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="TAN"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="TAN"/>
+
+        <Button 
+            Grid.Row="3"
+            Grid.Column="3"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="LOG"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="LOG"/>
+
+        <Button 
+            Grid.Row="3"
+            Grid.Column="4"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="EXP"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="EXP"/>
+
+        <!--Row 3-->
+        <Button 
+            Grid.Row="4"
+            Grid.Column="0"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="ASIN"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="ASIN"/>
+
+        <Button 
+            Grid.Row="4"
+            Grid.Column="1"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="ACOS"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="ATAN"/>
+
+        <Button 
+            Grid.Row="4"
+            Grid.Column="2"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="ATAN"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="ATAN"/>
+
+        <Button 
+            Grid.Row="4"
+            Grid.Column="3"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="LOG10"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="LOG10"/>
+
+        <Button 
+            Grid.Row="4"
+            Grid.Column="4"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="POW"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="POW"/>
+
+        <!--Row 4-->
+        <Button 
+            Grid.Row="5"
+            Grid.Column="0"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="SQRT"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="SQRT"/>
+
+        <Button 
+            Grid.Row="5"
+            Grid.Column="1"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="ABS"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="ABS"/>
+
+        <Button 
+            Grid.Row="5"
+            Grid.Column="2"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text=","
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter=","/>
+
+        <Button 
+            Grid.Row="5"
+            Grid.Column="3"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="("
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="("/>
+
+        <Button 
+            Grid.Row="5"
+            Grid.Column="4"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text=")"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter=")"/>
+
         <!--Number and Basic Operators-->
         <!--Row 1-->
         <Button Grid.Row="6" 
@@ -177,8 +357,6 @@
                 Style="{StaticResource OperatorButtonStyle}"
                 Text="="
                 Command="{Binding CalculateCommand}"/>
-
-
 
     </Grid>
 
