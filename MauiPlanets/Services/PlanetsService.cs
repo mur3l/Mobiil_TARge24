@@ -11,7 +11,7 @@ namespace MauiPlanets.Services
             {
                 Name = "Mercury",
                 Subtitle = "The smallest planet",
-                HeroImage = "mercury1m.png",
+                HeroImage = "mercury1m.jpg",
                 Description = "Mercury is the first planet from the Sun and " +
                 "the smallest in the Solar System. It is a rocky planet" +
                 " with a trace atmosphere and a surface gravity slightly higher " +
@@ -172,7 +172,11 @@ namespace MauiPlanets.Services
                 Images = new()
                 {
                     "pluto.jpg",
-                    "https://cdn.mos.cms.futurecdn.net/DoZSMXF87kCuzbymsuEFHo.jpg"
+                    "pluto2p.jpg",
+                    "pluto3p.jpg",
+                    "https://cdn.mos.cms.futurecdn.net/DoZSMXF87kCuzbymsuEFHo.jpg",
+                    "https://cdn.mos.cms.futurecdn.net/C7G6hzMza8PsxLewoioy3a-1200-80.jpg.webp",
+                    "https://cdn.mos.cms.futurecdn.net/8tRVfa2VMaCkNKr7HpTHWA-1200-80.jpg.webp"
                 }
             },
 
@@ -187,7 +191,11 @@ namespace MauiPlanets.Services
                 Images = new()
                 {
                     "ceres.jpg",
-                    "https://cdn.mos.cms.futurecdn.net/v2/t:0,l:420,cw:1080,ch:1080,q:80,w:1080/qnft8kRfeGWWLgaygo4fb9.jpg"
+                    "ceres2c.jpg",
+                    "ceres3c.jpg",
+                    "https://cdn.mos.cms.futurecdn.net/v2/t:0,l:420,cw:1080,ch:1080,q:80,w:1080/qnft8kRfeGWWLgaygo4fb9.jpg",
+                    "https://cdn.mos.cms.futurecdn.net/MR2qXRA6hWEZzgojiEMDX5-929-80.jpg.webp",
+                    "https://news.berkeley.edu/wp-content/uploads/2020/08/Ceres_Occator_final-750px.jpg"
                 }
             },
 
@@ -202,7 +210,11 @@ namespace MauiPlanets.Services
                 Images = new()
                 {
                     "haumea.jpg",
-                    "https://cdn.mos.cms.futurecdn.net/v2/t:25,l:0,cw:1024,ch:768,q:80,w:1024/FLYgpN3GGHzkyNY8wr8B2M.jpg"
+                    "haumea2h.jpg",
+                    "haumea3h.jpg",
+                    "https://cdn.mos.cms.futurecdn.net/v2/t:25,l:0,cw:1024,ch:768,q:80,w:1024/FLYgpN3GGHzkyNY8wr8B2M.jpg",
+                    "https://cdn.mos.cms.futurecdn.net/h5P8ZW8QJAscrMQ9r6euoc-1920-80.jpg.webp",
+                    "https://cdn.britannica.com/66/137066-004-13F11781/rendering-Artist-moons-Haumea.jpg"
                 }
             },
 
@@ -217,7 +229,11 @@ namespace MauiPlanets.Services
                 Images = new()
                 {
                     "makemake.jpg",
-                    "https://cdn.mos.cms.futurecdn.net/8QBGiy9BhmttKdGeAAZpn8.jpg"
+                    "makemake2m.jpg",
+                    "makemake3m.jpg",
+                    "https://cdn.mos.cms.futurecdn.net/8QBGiy9BhmttKdGeAAZpn8.jpg",
+                    "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/580253",
+                    "https://cdn.mos.cms.futurecdn.net/Tqfc7u56kBhxbTyWrmwa3h-1200-80.jpg.webp"
                 }
             },
 
@@ -232,7 +248,11 @@ namespace MauiPlanets.Services
                 Images = new()
                 {
                     "eris.jpg",
-                    "https://cdn.mos.cms.futurecdn.net/ufTfK2rbpQXZBjt2ZPsm57.jpg"
+                    "eris2e.jpg",
+                    "eris3e.jpg",
+                    "https://cdn.mos.cms.futurecdn.net/ufTfK2rbpQXZBjt2ZPsm57.jpg",
+                    "https://cdn.mos.cms.futurecdn.net/Tqfc7u56kBhxbTyWrmwa3h-1200-80.jpg.webp",
+                    "https://hips.hearstapps.com/hmg-prod/images/dwarf-planet-eris-royalty-free-image-1718796769.jpg?crop=1.00xw:0.847xh;0,0.0561xh&resize=980:*"
                 }
             },
         };
