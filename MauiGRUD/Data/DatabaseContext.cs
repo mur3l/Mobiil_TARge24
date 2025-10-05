@@ -36,7 +36,7 @@ namespace MauiGRUD.Data
             await Database.CreateTableAsync<TTable>();
         }
 
-        private async Task<TResult> Execute<TTabel, TResult>(Func<Task<TResult>> action) where TTable : class, new()
+        private async Task<TResult> Execute<TTable, TResult>(Func<Task<TResult>> action) where TTable : class, new()
         {
             await CreateTableIfNotExists<TTable>();
             return await action();
@@ -49,7 +49,7 @@ namespace MauiGRUD.Data
 
         public async Task<bool> AddItemAsync<TTable>(TTable item) where TTable : class, new()
         {
-            return await Execute<TTable, TTable>(async () => await Database.InsertAsync(item) > 0);
+            return await Execute<TTable, bool>(async () => await Database.InsertAsync(item) > 0);
         }
 
         public async Task<bool> UpdateItemAsync<TTable>(TTable item) where TTable : class, new()
