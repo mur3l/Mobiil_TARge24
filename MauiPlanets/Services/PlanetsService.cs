@@ -28,9 +28,9 @@ namespace MauiPlanets.Services
                     "mercury1m.jpg",
                     "mercury2m.jpg",
                     "mercury3m.jpg",
-                    "https://cdn.theatlantic.com/thumbor/D15rQggf6357X1-u6VpTD2N1yQE=/0x27:1041x613/976x549/media/img/mt/2017/04/MercuryImage/original.jpg",
-                    "https://solarsystem.nasa.gov/system/feature_items/images/73_carousel_mercury_2.jpg",
-                    "https://solarsystem.nasa.gov/system/feature_items/images/75_mercury_carousel_1.jpg"
+                    "https://images.weserv.nl/?url=cdn.theatlantic.com/thumbor/D15rQggf6357X1-u6VpTD2N1yQE=/0x27:1041x613/976x549/media/img/mt/2017/04/MercuryImage/original.jpg",
+                    "https://images.weserv.nl/?url=solarsystem.nasa.gov/system/feature_items/images/73_carousel_mercury_2.jpg",
+                    "https://images.weserv.nl/?url=solarsystem.nasa.gov/system/feature_items/images/75_mercury_carousel_1.jpg"
                 }
             },
             new()

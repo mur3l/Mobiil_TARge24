@@ -1,24 +1,25 @@
-﻿namespace MauiGRUD
+﻿using MauiGRUD.ViewModels;
+
+namespace MauiGRUD
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
-        public MainPage()
+        private readonly ProductsViewModel _productsViewModel;
+        public MainPage
+            (
+                ProductsViewModel productsViewModel
+            )
         {
             InitializeComponent();
+            BindingContext = productsViewModel;
+            _productsViewModel = productsViewModel;
         }
-
-        private void OnCounterClicked(object? sender, EventArgs e)
-        {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        protected async void OnAppearing()
+        { 
+            base.OnAppearing();
+            await _productsViewModel.LoadProductsAsync();
         }
+            
+        
     }
 }

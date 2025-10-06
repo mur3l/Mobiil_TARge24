@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using MauiGRUD.Data;
+using MauiGRUD.ViewModels;
+using Microsoft.Extensions.Logging;
 
 namespace MauiGRUD
 {
@@ -18,6 +20,9 @@ namespace MauiGRUD
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+            builder.Services.AddSingleton<DatabaseContext>();
+            builder.Services.AddSingleton<ProductsViewModel>();
+            builder.Services.AddSingleton<MainPage>();
 
             return builder.Build();
         }
